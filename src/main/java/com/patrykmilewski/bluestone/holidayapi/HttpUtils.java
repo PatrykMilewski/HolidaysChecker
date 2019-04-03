@@ -1,0 +1,6 @@
+package com.patrykmilewski.bluestone.holidayapi;
+
+class HttpUtils {
+    
+    
+}
