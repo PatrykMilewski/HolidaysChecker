@@ -18,7 +18,6 @@ RUN mkdir -p /opt/patrykmilewski/keys
 COPY --from=MAVEN_BUILDER /tmp/keystore.p12 /opt/patrykmilewski/keys
 
 # copy artifacts from builder
-RUN mkdir -p /usr/share/holidayschecker
-COPY --from=MAVEN_BUILDER /tmp/target/bluestone*.jar /usr/share/holdayschecker/bluestone.jar
+COPY --from=MAVEN_BUILDER /tmp/target/bluestone*.jar RUN mkdir -p /opt/patrykmilewski/bluestone.jar
 
-ENTRYPOINT java -jar /usr/share/holidayschecker/bluestone.jar -Dspring.profiles.active=production
+ENTRYPOINT java -jar RUN mkdir -p /opt/patrykmilewski/bluestone.jar -Dspring.profiles.active=production
